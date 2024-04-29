@@ -14,8 +14,9 @@ CREATE TABLE bruxos(
     idade INT NOT NULL,
     casa_hogwarts VARCHAR(50) NOT NULL,
     patrono VARCHAR(150) NOT NULL,
+    habilidade VARCHAR(150) NOT NULL,
     status_sangue VARCHAR(50) NOT NULL,
     id_varinha INT NOT NULL,
     FOREIGN KEY (id_varinha) REFERENCES varinha(id)
 );
-INSERT INTO bruxos(nome,idade,casa_hogwarts,patrono,status_sangue,id_varinha) VALUES ('Harry Potter', 11, 'Grifinória', 'Cervo', 'Mestiço', 1);
+INSERT INTO bruxos(nome,idade,casa_hogwarts,patrono,habilidade,status_sangue,id_varinha) VALUES ('Harry Potter', 11, 'Grifinória', 'Cervo','marca valdemort', 'Mestiço', 1);
